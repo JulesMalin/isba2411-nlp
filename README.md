@@ -56,7 +56,7 @@ Reference documents for the course live in [`/docs`](./docs):
 - [Syllabus](./docs/ISBA2411_NLP_Syllabus_Summer2026.pdf) — course policies, schedule, grading
 - [Assignment descriptions](./docs/ISBA2411_Assignment_Descriptions.docx) — the five assignments in detail
 - [Team Project Rubric](./docs/ISBA2411_Team_Project_Rubric.pdf) — how the Final Team Project milestones are graded
-- [Weekly learning outcomes](./docs/ISBA2411_Weekly_Learning_Outcomes.docx) — what you should be able to do each week
+- [Weekly learning outcomes](./docs/ISBA2411_Weekly_Learning_Outcomes.pdf) — what you should be able to do each week
 
 ## Setup
 ```bash
