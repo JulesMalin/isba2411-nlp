@@ -1,0 +1,12 @@
+transformers
+datasets
+sentence-transformers
+peft
+accelerate
+evaluate
+faiss-cpu
+scikit-learn
+pandas
+numpy
+nltk
+spacy

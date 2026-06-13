@@ -1,0 +1,10 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
+data/*.csv
+data/*.json
+!data/README.md
+models/
+*.ckpt
