@@ -1,7 +1,7 @@
 # Assignment 1 · Milestone 1 — Business Brief
 **ISBA 2411 · Due Week 1 · Individual (used to form teams) · 400–600 words**
 
-Frame your proposed capstone as a short business brief. Submit as PDF via Camino.
+Frame your proposed final team project as a short business brief. Submit as PDF via Camino.
 
 ## 1. Problem
 What real-world NLP problem are you addressing? Who has it?

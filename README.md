@@ -3,7 +3,7 @@
 
 Course companion repository. This repo links to the publishers' official, openly licensed
 notebooks (it does **not** redistribute the textbooks), maps each notebook to the weekly
-schedule, and houses the capstone **milestone starter notebooks** your team will build on.
+schedule, and houses the Final Team Project **milestone starter notebooks** your team will build on.
 
 > **Texts.** Jurafsky & Martin, *Speech and Language Processing* (J&M, 3rd-ed. draft released Jan 6, 2026 — reading only, no code repo) ·
 > Alammar & Grootendorst, *Hands-On Large Language Models* (HOLLM) ·
@@ -38,7 +38,7 @@ J&M readings are aligned to the **current Jan 6, 2026 draft** numbering (e.g., E
 
 A couple of weeks intentionally show **"—"** for one publisher because that book has no matching chapter: Tunstall has no standalone embeddings chapter (Week 6), and neither book has a dedicated evaluation/ethics chapter (Week 9) — that material lives in **J&M Ch. 9 (Post-training: alignment)**.
 
-## Capstone milestones
+## Final Team Project milestones
 Five sequenced assignments, each applying that part of the course to your team's own project.
 Topic is open — any task that fits a *baseline → measured improvement* frame.
 
@@ -49,6 +49,14 @@ Topic is open — any task that fits a *baseline → measured improvement* frame
 | 3 | Model Adaptation Experiment | 5 | [`milestones/Milestone3_Model_Adaptation.ipynb`](./milestones/Milestone3_Model_Adaptation.ipynb) |
 | 4 | System Prototype | 7 | [`milestones/Milestone4_System_Prototype.ipynb`](./milestones/Milestone4_System_Prototype.ipynb) |
 | 5 | Final System & Demo | 9 (present Aug 18 & 20) | [`milestones/Milestone5_Final_Deliverable.md`](./milestones/Milestone5_Final_Deliverable.md) |
+
+## Course documents
+Reference documents for the course live in [`/docs`](./docs):
+
+- [Syllabus](./docs/ISBA2411_NLP_Syllabus_Summer2026.docx) — course policies, schedule, grading
+- [Assignment descriptions](./docs/ISBA2411_Assignment_Descriptions.docx) — the five assignments in detail
+- [Team Project Rubric](./docs/ISBA2411_Team_Project_Rubric.docx) — how the Final Team Project milestones are graded
+- [Weekly learning outcomes](./docs/ISBA2411_Weekly_Learning_Outcomes.docx) — what you should be able to do each week
 
 ## Setup
 ```bash
