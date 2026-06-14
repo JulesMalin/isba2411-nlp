@@ -11,8 +11,8 @@ schedule, and houses the Final Team Project **milestone starter notebooks** your
 
 ## How to use this repo
 - **Publisher notebooks** are linked below — open any chapter directly in Google Colab with the **▶ Colab** link (nothing to install).
-- **Milestone starters** live in [`/milestones`](./milestones). Each team copies these into their own project repo and fills in the `TODO` cells against *their* dataset.
-- **Data**: see [`/data`](./data) for the shared corpora (e.g., FOMC transcripts) and where to place your team's dataset.
+- **Milestone starters** live in [`/milestones`](./milestones). Each one runs end-to-end on built-in demo data — open it in Colab via the **Open in Colab** badge, then replace the demo block at the `# ====== SWAP IN YOUR TEAM'S DATA HERE ======` cell with *your* dataset.
+- **Data**: see [`/data`](./data) for the shared FOMC corpus (used in the Milestone 2 worked example) and guidance on where to place your team's own dataset.
 - Run everything on **Google Colab** (included in your SCU Google Suite) or the **SCU WAVE** cluster for heavier jobs.
 
 ## Weekly notebook map
