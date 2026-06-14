@@ -1,5 +1,5 @@
 # Assignment 1 · Milestone 1 — Business Brief
-**ISBA 2411 · Due Week 1 · Individual (used to form teams) · 400–600 words**
+**ISBA 2411 · Due Sunday, June 21, 2026 (11:59 PM PT) · Week 1 · Individual (used to form teams) · 400–600 words**
 
 Frame your proposed final team project as a short **business brief**. This is the seed of your
 team's whole project — the problem you define here is the one you carry through Milestones 2–5.
