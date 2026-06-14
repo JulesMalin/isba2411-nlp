@@ -4,7 +4,7 @@
 ## Deliverable checklist (due Sunday, Aug 23, 2026, 11:59 PM PT)
 - [ ] **GitHub repo** — clean, documented, reproducible
 - [ ] **Production-ready system** — runs end-to-end on real input
-- [ ] **Documentation** — README with setup + usage + architecture
+- [ ] **Documentation** — README with setup + usage + architecture, plus a **problem statement** and a **summary of findings, recommendations, or solutions**
 - [ ] **Evaluation** — baseline, measured improvement, and a metric
 - [ ] **Governance / risk appendix** — bias, privacy, failure modes, mitigations
 - [ ] **Slide deck**
