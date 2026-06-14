@@ -1,6 +1,31 @@
 # ISBA 2411 — Natural Language Processing and AI
 **Santa Clara University · Leavey School of Business · Summer 2026**
 
+## What this course is about
+
+**Every company now has an "AI strategy." Most of them are guessing.** This course is about
+being the person in the room who isn't.
+
+Large language models went from research curiosity to boardroom obsession in about two years. The
+hype is loud, but underneath it sits a real, learnable discipline: **how to turn unstructured human
+language into decisions a business can act on.** That discipline is Natural Language Processing, and
+it's the engine behind the tools everyone is suddenly talking about.
+
+In ISBA 2411 you'll go past the demos and the headlines. You'll learn how language gets represented
+as data, how models are adapted to a specific problem, and, just as important, **how to tell whether
+a system actually works**: measuring a baseline, proving an improvement, and weighing the real risks
+(bias, privacy, hallucination) before anything ships.
+
+We treat NLP as a **socio-technical system**, not a magic box. By the end, you won't just have
+*used* an LLM. You'll have **built and evaluated a working NLP system end to end**, framed as a real
+business case. That's the difference between riding the hype and being trusted to lead through it.
+
+**The whole course is one project.** Starting Week 1, you define a real problem and carry it through
+five milestones: from a business brief, to a baseline, an adapted model, a prototype, and a final
+working system you demo live. Everything we read and build feeds that arc.
+
+---
+
 Course companion repository. This repo links to the publishers' official, openly licensed
 notebooks (it does **not** redistribute the textbooks), maps each notebook to the weekly
 schedule, and houses the Final Team Project **milestone starter notebooks** your team will build on.
