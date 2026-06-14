@@ -1,4 +1,4 @@
-# ISBA 2411 — Natural Language Processing
+# ISBA 2411 — Natural Language Processing and AI
 **Santa Clara University · Leavey School of Business · Summer 2026**
 
 Course companion repository. This repo links to the publishers' official, openly licensed
