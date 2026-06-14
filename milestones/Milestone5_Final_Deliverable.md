@@ -1,7 +1,7 @@
 # Assignment 5 · Milestone 5 — Final System & Demo
-**ISBA 2411 · Deliverable due Week 9 · Presented live Aug 18 & 20**
+**ISBA 2411 · Deliverable due Sunday, Aug 23, 2026 (11:59 PM PT) · Presented live Aug 18 & 20**
 
-## Deliverable checklist (due end of Week 9)
+## Deliverable checklist (due Sunday, Aug 23, 2026, 11:59 PM PT)
 - [ ] **GitHub repo** — clean, documented, reproducible
 - [ ] **Production-ready system** — runs end-to-end on real input
 - [ ] **Documentation** — README with setup + usage + architecture
