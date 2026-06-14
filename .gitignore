@@ -5,6 +5,7 @@ __pycache__/
 .env
 data/*.csv
 data/*.json
+data/raw/
 !data/README.md
 models/
 *.ckpt
