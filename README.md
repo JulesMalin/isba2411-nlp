@@ -75,6 +75,8 @@ Topic is open — any task that fits a *baseline → measured improvement* frame
 | 4 | System Prototype | 7 | [`milestones/Milestone4_System_Prototype.ipynb`](./milestones/Milestone4_System_Prototype.ipynb) |
 | 5 | Final System & Demo | 9 (present Aug 18 & 20) | [`milestones/Milestone5_Final_Deliverable.md`](./milestones/Milestone5_Final_Deliverable.md) |
 
+**📓 Full worked example — all five milestones in one notebook.** [`Example Final Project/`](./Example%20Final%20Project/ISBA2411_Final_Project_Example_Helios_Support_Copilot.ipynb) builds an agentic customer-support copilot ("Helios") end to end — classical baseline → transformer embeddings → retrieval (RAG) → a multi-agent LangGraph system → evaluation → governance — with each section mapped to a milestone. Open it directly: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JulesMalin/isba2411-nlp/blob/main/Example%20Final%20Project/ISBA2411_Final_Project_Example_Helios_Support_Copilot.ipynb)
+
 ## Course documents
 Reference documents for the course live in [`/docs`](./docs):
 
