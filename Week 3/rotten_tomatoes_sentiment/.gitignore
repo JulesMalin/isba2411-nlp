@@ -1,0 +1,8 @@
+# Trained model artifact — rebuild it with `python train.py`
+model.joblib
+*.pkl
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
