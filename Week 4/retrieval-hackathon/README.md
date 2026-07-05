@@ -85,6 +85,8 @@ You can use any of these, combine them, or invent your own. They're demonstrated
 | 4 | **Hybrid** | blend keyword + semantic with a tunable dial `alpha` |
 | 5 | **Cross-encoder re-ranking** | retrieve a shortlist, then re-order it with a heavier model — the path to the top of the board |
 
+> New to these? **[The 5 Retrieval Algorithms Explained (PDF)](ISBA2411_L7_Algorithms_Explained.pdf)** — a one-page visual guide to each method: a diagram, how it works, its history, real use cases, and links to read more.
+
 ## Getting started
 
 1. **Open the notebook in Colab** (badge at the top) and run **Section 0** — it loads the data and gives you `score()`, `evaluate()`, and `submit()`.
@@ -126,7 +128,8 @@ retrieval-hackathon/
 ├── corpus.jsonl              ← 800 passages
 ├── queries.jsonl             ← 150 main (literal) queries
 ├── curveball.jsonl           ← 30 paraphrased queries
-└── dev.jsonl                 ← 100 tuning queries
+├── dev.jsonl                 ← 100 tuning queries
+└── ISBA2411_L7_Algorithms_Explained.pdf   ← visual guide to the 5 methods
 ```
 
 ## Learn more
