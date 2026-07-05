@@ -126,13 +126,8 @@ retrieval-hackathon/
 ├── corpus.jsonl              ← 800 passages
 ├── queries.jsonl             ← 150 main (literal) queries
 ├── curveball.jsonl           ← 30 paraphrased queries
-├── dev.jsonl                 ← 100 tuning queries
-└── ISBA2411_L7_Key_Learnings.pdf   ← takeaway sheet (read after)
+└── dev.jsonl                 ← 100 tuning queries
 ```
-
-## After the hackathon
-
-**[Key Learnings (PDF)](ISBA2411_L7_Key_Learnings.pdf)** — a takeaway sheet: how retrieval works, the models you used with diagrams and validated scores, the seven big lessons, and links to the literature.
 
 ## Learn more
 
