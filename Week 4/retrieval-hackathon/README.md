@@ -107,6 +107,22 @@ For each query, your retriever ranks the 800 passages; we check where the correc
 
 **Round 1** ranks on **Main MRR**. **Round 2** ranks on **Combined MRR = (Main + Curveball) / 2**.
 
+### How scoring works
+
+![How MRR and Recall@5 work](metrics_explained.png)
+
+Two questions, two numbers:
+
+- **Recall@5** — did the correct passage make the top 5? A yes/no per query, averaged — *did you find it at all.*
+- **MRR@10** — how high did it rank? Take **1 ÷ (rank of the correct passage)**, 0 if it's past rank 10, then average — *is it near the top.*
+
+**Worked example** — across four queries the correct passage lands at ranks 1, 3, 8, and (not found):
+
+- Recall@5 = in the top 5? ✓ ✓ ✗ ✗ → **2 / 4 = 0.50**
+- MRR@10 = (1/1 + 1/3 + 1/8 + 0) / 4 → **0.37**
+
+Rule of thumb: **Recall = “is it in the bag?”  ·  MRR = “is it on top?”**
+
 ## Rules
 
 - **Rank from the query only.** Your retriever is a function `search(query) → ranked passage ids`, scoring passages from the *query text and the corpus*. You may **not** read `gold_id`, and you may **not** build a query→answer lookup. *If it wouldn't work on a brand-new question typed live, it's not allowed* — this is the retrieval version of "don't touch the test set."
