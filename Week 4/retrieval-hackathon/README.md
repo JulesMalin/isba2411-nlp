@@ -85,8 +85,6 @@ You can use any of these, combine them, or invent your own. They're demonstrated
 | 4 | **Hybrid** | blend keyword + semantic with a tunable dial `alpha` |
 | 5 | **Cross-encoder re-ranking** | retrieve a shortlist, then re-order it with a heavier model — the path to the top of the board |
 
-> **After the hackathon:** the **[Reference Solution](reference_solution.ipynb)** builds the strongest retrievers step by step — TF-IDF → E5 → E5 + re-rank — with an explanation of each cell and the results (combined MRR 0.63 → 0.83 → 0.90).
-
 > New to these? **[The 5 Retrieval Algorithms Explained (PDF)](ISBA2411_L7_Algorithms_Explained.pdf)** — a one-page visual guide to each method: a diagram, how it works, its history, real use cases, and links to read more.
 
 ## Getting started
