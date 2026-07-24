@@ -1,0 +1,161 @@
+ticket_id,created_at,channel,plan,region,ticket_text,priority,category
+CB-4201,2026-08-03,in-app,Team,North America,"Timestamps are coming through 7 hours off, so everything looks like it happened yesterday.",normal,data_sync
+CB-4202,2026-06-03,email,Team,EMEA,I deleted one widget and the entire dashboard layout scrambled itself.,normal,bug_ui
+CB-4203,2026-06-14,chat,Team,EMEA,"After the last release, currency fields are arriving as text instead of numbers.",normal,data_sync
+CB-4204,2026-08-17,email,Business,APAC,"The upgrade button does nothing when I click it, so I can't add the seats we need.",high,billing_plan
+CB-4205,2026-07-05,email,Team,APAC,Is there a list of keyboard shortcuts published somewhere?,low,how_to
+CB-4206,2026-07-21,email,Business,APAC,It would be great to have conditional formatting on table cells.,low,feature_request
+CB-4207,2026-08-22,email,Business,LATAM,Can we use a custom domain for externally shared links?,low,how_to
+CB-4208,2026-08-19,in-app,Free,North America,The percentage column shows 0% for values that are obviously nonzero.,normal,bug_ui
+CB-4209,2026-08-06,email,Free,North America,Session keeps dropping on Safari specifically. Works fine on Chrome.,normal,login_access
+CB-4210,2026-08-28,in-app,Business,North America,The freshness indicator says 2 minutes but the numbers are clearly from this morning.,normal,data_sync
+CB-4211,2026-08-22,email,Enterprise,North America,Please let us white-label shared reports for our own clients.,low,feature_request
+CB-4212,2026-08-23,chat,Team,LATAM,How do I bulk import users from a CSV file?,low,how_to
+CB-4213,2026-08-17,in-app,Business,North America,Our API p95 latency went from 200ms to 3 seconds this week.,normal,performance
+CB-4214,2026-06-24,chat,Business,North America,The whole app is crawling for our EU team specifically. The US team is unaffected.,normal,performance
+CB-4215,2026-06-09,email,Team,LATAM,The Google Sheets export stopped refreshing and just shows an old snapshot.,normal,integrations
+CB-4216,2026-08-25,in-app,Team,APAC,"The row counts here don't match our warehouse. We're off by roughly 4,000 records.",normal,data_sync
+CB-4217,2026-08-16,in-app,Team,North America,"Sarah left the company last week but her account still has access. Please revoke immediately, this is a security concern.",urgent,login_access
+CB-4218,2026-06-22,chat,Business,North America,Where do I find our data retention settings?,low,how_to
+CB-4219,2026-07-21,email,Team,North America,"help! whole team is locked out, we think someone changed the sso config by accident",urgent,login_access
+CB-4220,2026-06-11,in-app,Business,EMEA,Numbers show with commas in one view and periods in another - inconsistent locale handling.,normal,bug_ui
+CB-4221,2026-07-23,email,Free,APAC,Jira tickets created from here aren't linking back - the link field comes through blank.,normal,integrations
+CB-4222,2026-07-10,chat,Enterprise,EMEA,Our webhook fires twice for every event and the downstream system is double-counting.,high,integrations
+CB-4223,2026-08-27,in-app,Business,North America,Any chance of multiplayer cursors so two of us can co-edit a dashboard?,low,feature_request
+CB-4224,2026-06-18,in-app,Business,North America,We want to pin one north-star metric to the top of every dashboard.,low,feature_request
+CB-4225,2026-08-24,in-app,Business,North America,Slack notifications stopped posting to our #alerts channel after we reinstalled the app.,normal,integrations
+CB-4226,2026-08-27,email,Enterprise,EMEA,BigQuery pull silently skipped an entire table and there was no alert about it.,normal,data_sync
+CB-4227,2026-07-19,in-app,Business,North America,After you changed the sign-in page my password manager entry doesn't autofill anymore.,normal,login_access
+CB-4228,2026-08-09,email,Business,EMEA,What's the best practice for separating staging from production workspaces?,low,how_to
+CB-4229,2026-08-23,email,Team,North America,Do you have a status page? Things feel degraded but I can't confirm anywhere.,high,performance
+CB-4230,2026-06-17,email,Enterprise,North America,The filter chip says 'Last 30 days' but the data shown is clearly year-to-date.,normal,bug_ui
+CB-4231,2026-08-18,in-app,Free,North America,"Receipts aren't reaching our AP mailbox, they're still going to someone who left the company.",normal,billing_plan
+CB-4232,2026-07-28,email,Business,North America,Our largest dataset pushes the browser tab to 4GB of memory and then it crashes.,urgent,performance
+CB-4233,2026-07-10,in-app,Team,North America,The incremental refresh reset to a full load and blew through our API quota.,normal,data_sync
+CB-4234,2026-07-23,email,Free,EMEA,The API reference documents a field that doesn't exist in the actual response payload.,normal,integrations
+CB-4235,2026-07-03,email,Enterprise,EMEA,everything hangs when a colleague runs a big query - are we sharing compute?,normal,performance
+CB-4236,2026-08-12,email,Enterprise,EMEA,We need to annotate charts with events like product releases.,low,feature_request
+CB-4237,2026-06-17,in-app,Business,North America,Trying to understand how row-level security interacts with our customer data.,low,how_to
+CB-4238,2026-07-16,email,Enterprise,EMEA,Our Postgres connector hasn't pulled new rows since Tuesday and the dashboards are stale.,high,data_sync
+CB-4239,2026-08-17,email,Business,LATAM,"The bar chart total doesn't match the table underneath it. Table says 1,204, chart says 1,199.",normal,bug_ui
+CB-4240,2026-06-26,email,Business,LATAM,Records we deleted in the source are still showing up here. Is there a hard-delete option?,normal,data_sync
+CB-4241,2026-07-19,email,Business,EMEA,Requesting SAML group-to-role mapping so we stop managing permissions by hand.,low,feature_request
+CB-4242,2026-08-24,email,Enterprise,EMEA,New columns we added upstream aren't appearing in the schema. Do I need to re-map manually?,normal,data_sync
+CB-4243,2026-07-12,email,Enterprise,APAC,"The OAuth consent screen shows the wrong app name to our users, so it looks like phishing.",normal,integrations
+CB-4244,2026-07-18,chat,Team,North America,Snowflake connection keeps dropping mid-sync. Our credentials haven't changed.,normal,data_sync
+CB-4245,2026-06-24,in-app,Business,North America,Is there a Terraform provider? We manage all our infrastructure as code.,normal,integrations
+CB-4246,2026-08-09,email,Enterprise,North America,"Charts render one at a time instead of together, so a full dashboard takes ages.",normal,performance
+CB-4247,2026-07-03,email,Team,EMEA,Can two workspaces share one Slack install or do we need to connect each separately?,normal,integrations
+CB-4248,2026-07-23,email,Business,North America,We'd really like version history on dashboards so we can roll back a bad change.,low,feature_request
+CB-4249,2026-06-09,email,Team,North America,We were charged twice this month for the same seats. We need a refund on the duplicate.,high,billing_plan
+CB-4250,2026-08-04,email,Business,EMEA,We'd like to set a default timezone per workspace rather than per user.,low,feature_request
+CB-4251,2026-08-09,in-app,Business,North America,Can we increase the refresh frequency to every 15 minutes instead of hourly?,normal,data_sync
+CB-4252,2026-07-26,in-app,Team,North America,I removed four users last month but the invoice still shows the old headcount.,normal,billing_plan
+CB-4253,2026-07-03,email,Team,North America,The onboarding checklist still says incomplete even though we finished every step.,normal,bug_ui
+CB-4254,2026-08-20,email,Team,LATAM,clicking save does nothing and my changes are gone as soon as i refresh,normal,bug_ui
+CB-4255,2026-06-06,email,Enterprise,North America,"Please add native Excel export, not just CSV. Our finance team lives in Excel.",low,feature_request
+CB-4256,2026-07-16,email,Business,EMEA,Uploading a logo larger than 1MB fails silently with no error message at all.,high,bug_ui
+CB-4257,2026-07-12,chat,Enterprise,North America,We need to add 25 seats mid-cycle. Will that be prorated or charged in full?,normal,billing_plan
+CB-4258,2026-06-08,email,Business,EMEA,"The Salesforce connection is only pulling Accounts, not Opportunities.",normal,integrations
+CB-4259,2026-07-15,chat,Team,EMEA,Autosave lags so badly that I lose keystrokes while typing notes.,normal,performance
+CB-4260,2026-08-01,email,Free,EMEA,new admin here - where should i start? is there an onboarding guide,low,how_to
+CB-4261,2026-06-13,in-app,Business,EMEA,Getting an 'account suspended' banner but our invoice is paid. Please advise.,high,login_access
+CB-4262,2026-06-17,email,Free,EMEA,Can you send me a W-9 and an itemized invoice for our accounting team?,normal,billing_plan
+CB-4263,2026-07-19,email,Team,EMEA,Sorting by the revenue column sorts alphabetically instead of numerically.,normal,bug_ui
+CB-4264,2026-08-05,chat,Free,APAC,SSO through Okta stopped working for our whole team after the weekend. Nobody can sign in.,urgent,login_access
+CB-4265,2026-08-13,email,Enterprise,APAC,invoice INV-88214 doesn't match the amount that actually hit our card,normal,billing_plan
+CB-4266,2026-06-08,email,Business,North America,page freezes completely when i apply more than three filters at once,normal,performance
+CB-4267,2026-08-14,email,Enterprise,North America,"requesting a refund, we barely used the product this quarter",normal,billing_plan
+CB-4268,2026-08-06,email,Team,North America,Can I clone an existing dashboard to use as a starting point?,low,how_to
+CB-4269,2026-08-10,in-app,Team,North America,What happens to our data if we cancel? Is there a retention window before deletion?,normal,billing_plan
+CB-4270,2026-06-03,in-app,Team,APAC,What's the actual difference between a workspace and a project? Trying to structure our team.,low,how_to
+CB-4271,2026-06-12,email,Team,EMEA,Is there a way to schedule a weekly email of one specific report?,low,how_to
+CB-4272,2026-06-03,in-app,Business,APAC,Is there documentation on how the 'engagement' metric is actually calculated?,low,how_to
+CB-4273,2026-08-26,chat,Team,North America,Please cancel our subscription effective at the end of the current term. We are not renewing.,normal,billing_plan
+CB-4274,2026-07-24,email,Team,North America,How long are deleted dashboards recoverable before they're gone permanently?,low,how_to
+CB-4275,2026-07-15,chat,Business,APAC,why does it sign me out every 20 minutes? extremely annoying when im in the middle of writing a report,normal,login_access
+CB-4276,2026-08-18,email,Enterprise,North America,Our CSV export repeats the header row every 1000 lines.,normal,bug_ui
+CB-4277,2026-08-06,email,Enterprise,North America,Can't get into my account since this morning - it keeps saying my password is wrong but I haven't changed it.,high,login_access
+CB-4278,2026-08-02,email,Enterprise,North America,Our PO number has to appear on the invoice or our AP system rejects it automatically.,normal,billing_plan
+CB-4279,2026-08-24,email,Enterprise,LATAM,"Scheduled reports are arriving hours late, or sometimes not at all.",normal,performance
+CB-4280,2026-06-12,email,Team,APAC,Need to pause the connector over the weekend during a database migration. How?,normal,data_sync
+CB-4281,2026-07-12,email,Free,North America,"Sync fails with error SYNC_TIMEOUT after about 12 minutes, every night.",high,data_sync
+CB-4282,2026-08-23,email,Business,North America,The magic link goes to a page that says token invalid. Every single time.,normal,login_access
+CB-4283,2026-07-13,email,Team,EMEA,Webhook signature verification fails when using the secret shown in the dashboard.,high,integrations
+CB-4284,2026-06-16,chat,Free,APAC,How do I embed a chart into a Confluence page?,low,how_to
+CB-4285,2026-07-21,chat,Business,North America,Dashboards take 40+ seconds to load since yesterday. They used to come up instantly.,normal,performance
+CB-4286,2026-06-14,chat,Team,North America,Any plans to support Microsoft Teams? We're migrating off Slack next quarter.,normal,integrations
+CB-4287,2026-06-24,in-app,Enterprise,EMEA,The Zapier connection broke after your API version bump last week.,normal,integrations
+CB-4288,2026-07-28,email,Enterprise,North America,I'm stuck in a redirect loop when I try to sign in with Google. It just spins forever.,normal,login_access
+CB-4289,2026-06-12,email,Business,EMEA,I need to transfer the owner role. The previous owner has left and we can't reach billing settings.,high,login_access
+CB-4290,2026-07-13,email,Enterprise,North America,"New phone, lost my 2FA device. How do I get back in? I'm the only admin on the account.",normal,login_access
+CB-4291,2026-07-19,in-app,Enterprise,EMEA,our nightly ETL job now overlaps with your refresh and locks the table,normal,data_sync
+CB-4292,2026-08-11,chat,Enterprise,EMEA,Can we pay by ACH or wire instead of credit card? Our finance team won't approve cards.,normal,billing_plan
+CB-4293,2026-08-27,email,Team,North America,We're rate limited at 100 requests a minute but need a higher ceiling for our nightly export.,normal,integrations
+CB-4294,2026-08-26,in-app,Enterprise,APAC,can you add a dark mode preference that actually persists across devices,low,feature_request
+CB-4295,2026-07-10,chat,Enterprise,EMEA,Print view cuts off the right third of any wide table.,normal,bug_ui
+CB-4296,2026-08-18,email,Enterprise,LATAM,"Locked out after too many attempts. Can someone reset it - this is urgent, I have a board meeting in an hour.",urgent,login_access
+CB-4297,2026-08-25,chat,Business,North America,"It's noticeably slower since the redesign - same data, same filters as before.",normal,performance
+CB-4298,2026-08-10,email,Enterprise,North America,The 2FA setup QR code won't scan and there's no manual key shown as a fallback.,normal,login_access
+CB-4299,2026-08-02,in-app,Team,EMEA,sync reports success but nothing actually updated. very confusing,normal,data_sync
+CB-4300,2026-08-07,chat,Business,North America,Add multi-select on date comparison so we can see QoQ and YoY at the same time.,low,feature_request
+CB-4301,2026-08-26,email,Enterprise,LATAM,Can we exclude PII columns from being pulled in? Compliance is asking.,normal,data_sync
+CB-4302,2026-08-14,in-app,Team,North America,Getting permission denied after our DBA rotated the service account credentials.,normal,data_sync
+CB-4303,2026-08-17,email,Business,EMEA,A bulk edit across 500 records fails halfway through with no error message.,high,performance
+CB-4304,2026-06-27,chat,Business,North America,our service account hit a permission wall after your last update,normal,integrations
+CB-4305,2026-06-04,email,Business,EMEA,We got charged for a trial I understood to be free. Please reverse that.,normal,billing_plan
+CB-4306,2026-06-21,in-app,Business,North America,The historical backfill has been running for three days now. Is that expected?,normal,data_sync
+CB-4307,2026-08-02,in-app,Team,North America,Please support nested folders - a flat list doesn't scale for an org our size.,low,feature_request
+CB-4308,2026-07-08,in-app,Team,EMEA,How do I share a dashboard with someone outside our organization?,low,how_to
+CB-4309,2026-06-10,email,Free,EMEA,"The first load after signing in is very slow, then subsequent pages are fine.",normal,performance
+CB-4310,2026-08-14,in-app,Team,EMEA,The loading spinner never resolves on the admin settings page.,normal,performance
+CB-4311,2026-06-19,email,Enterprise,North America,Feature request: alert digests instead of one email per alert. My inbox is unusable.,low,feature_request
+CB-4312,2026-08-10,in-app,Team,APAC,"Exporting anything over about 10,000 rows just times out.",normal,performance
+CB-4313,2026-08-26,email,Enterprise,EMEA,Duplicate rows show up in the UI but the export only contains one of them.,normal,bug_ui
+CB-4314,2026-08-26,email,Business,LATAM,We only see timeouts once we hit the Business plan limits - are we being throttled?,high,performance
+CB-4315,2026-06-23,email,Business,North America,How do I archive old projects without permanently deleting them?,low,how_to
+CB-4316,2026-06-26,email,Team,EMEA,Pasting into the notes field strips all formatting and line breaks.,normal,bug_ui
+CB-4317,2026-08-05,email,Team,North America,Search takes forever and sometimes returns nothing at all until I retry.,normal,performance
+CB-4318,2026-06-20,email,Business,EMEA,The tooltip gets cut off at the edge of the screen so I can't read the full value.,high,bug_ui
+CB-4319,2026-06-14,in-app,Free,North America,Need to switch from monthly to annual so we can use up budget before end of quarter.,normal,billing_plan
+CB-4320,2026-07-09,in-app,Business,EMEA,Any plans for a native iOS home screen widget?,low,feature_request
+CB-4321,2026-07-01,email,Free,North America,The card on file expired and now the account is in a grace period. Where do I update it?,normal,billing_plan
+CB-4322,2026-07-20,in-app,Free,EMEA,I can sign in on desktop but the mobile app says invalid credentials with the exact same password.,normal,login_access
+CB-4323,2026-07-06,chat,Business,North America,Can we enforce SSO only and turn off password sign-in for our whole org?,normal,login_access
+CB-4324,2026-08-07,email,Team,North America,The mobile app is unusably slow on anything other than wifi.,normal,performance
+CB-4325,2026-08-07,email,Enterprise,North America,Please add anomaly detection on key metrics instead of static thresholds.,low,feature_request
+CB-4326,2026-06-02,email,Team,EMEA,sdk throws a 401 intermittently even with a token thats definitely valid,normal,integrations
+CB-4327,2026-08-20,chat,Business,North America,Dark mode makes the axis labels essentially invisible.,normal,bug_ui
+CB-4328,2026-07-05,email,Enterprise,EMEA,What's the recommended way to organize 200+ dashboards? Ours has become a mess.,low,how_to
+CB-4329,2026-08-13,in-app,Team,North America,"The password reset email never arrives. Checked spam, tried three times.",normal,login_access
+CB-4330,2026-06-01,in-app,Free,North America,Chart legend colors stop matching the series after I reorder them.,normal,bug_ui
+CB-4331,2026-06-23,email,Enterprise,North America,A public API for creating dashboards would let us automate customer onboarding.,low,feature_request
+CB-4332,2026-06-19,email,Business,APAC,the undo button undoes more than one action at a time,normal,bug_ui
+CB-4333,2026-07-04,in-app,Team,North America,how do i set up an alert for when a metric drops below a threshold,low,how_to
+CB-4334,2026-06-16,email,Business,North America,Can I export the audit log for a compliance review?,low,how_to
+CB-4335,2026-06-28,chat,Business,LATAM,Please add the ability to comment on a specific data point rather than the whole dashboard.,low,feature_request
+CB-4336,2026-07-08,email,Business,EMEA,Our SAML metadata certificate expired and now nobody on the eng team can authenticate. Need this fixed today.,urgent,login_access
+CB-4337,2026-08-25,chat,Business,North America,Long team names overflow their container and break the sidebar layout.,normal,bug_ui
+CB-4338,2026-08-02,email,Team,EMEA,The timezone selector resets itself to UTC every time I reload the page.,normal,bug_ui
+CB-4339,2026-08-20,email,Enterprise,North America,A query that ran in 2 seconds last week now takes 90. Nothing changed on our side.,normal,performance
+CB-4340,2026-06-23,chat,Business,LATAM,How exactly are seats counted - is a deactivated user still billed until renewal?,normal,billing_plan
+CB-4341,2026-08-22,email,Team,North America,How do I give someone view-only access without consuming a full seat?,low,how_to
+CB-4342,2026-07-18,email,Team,APAC,It would help enormously to see who viewed a dashboard and when.,low,feature_request
+CB-4343,2026-08-07,email,Business,EMEA,HubSpot custom properties don't appear in the field mapping dropdown at all.,high,integrations
+CB-4344,2026-06-06,chat,Enterprise,North America,Getting 504 gateway timeouts on the reports page during business hours.,high,performance
+CB-4345,2026-07-25,email,Business,EMEA,Duplicate rows appear after every refresh - same primary key repeated twice.,normal,data_sync
+CB-4346,2026-08-16,email,Team,North America,We need SCIM provisioning so accounts get created automatically from Okta.,normal,integrations
+CB-4347,2026-06-02,email,Business,APAC,We need to rotate our API key without downtime. What's the recommended process?,high,integrations
+CB-4348,2026-08-14,email,Free,LATAM,We want to move from Business down to Team at renewal. What functionality do we lose?,high,billing_plan
+CB-4349,2026-08-21,in-app,Team,LATAM,Your browser extension conflicts with our security plugin and crashes the tab.,urgent,integrations
+CB-4350,2026-06-26,chat,Team,EMEA,Trying to add a new teammate but the invite link says expired the moment they click it.,normal,login_access
+CB-4351,2026-08-06,email,Business,North America,Is there a sandbox environment where we can test before pointing production at it?,normal,integrations
+CB-4352,2026-07-17,email,Enterprise,North America,Why did our price go up 30% without notice? Nobody told us about a change.,normal,billing_plan
+CB-4353,2026-06-19,in-app,Business,APAC,The date picker won't let me select anything before 2024 even though we have older data.,normal,bug_ui
+CB-4354,2026-06-05,email,Enterprise,North America,Are we on a legacy plan? Trying to work out why our feature set differs from the pricing page.,normal,billing_plan
+CB-4355,2026-07-28,in-app,Team,North America,MFA codes from the authenticator app are being rejected. I've resynced the app twice already.,normal,login_access
+CB-4356,2026-08-14,in-app,Business,EMEA,requesting bulk delete - cleaning up 300 stale charts one at a time is painful,low,feature_request
+CB-4357,2026-07-18,email,Business,North America,Please add Snowflake key-pair authentication. Static passwords are against our policy.,low,feature_request
+CB-4358,2026-07-28,chat,Business,North America,Refresh failures aren't being emailed to anyone - we only found out by accident.,normal,data_sync
+CB-4359,2026-06-15,email,Team,EMEA,What roles exist and what can each one do? I can't find a permissions matrix anywhere.,low,how_to
+CB-4360,2026-06-23,in-app,Team,EMEA,We're a nonprofit - do you offer discounted pricing for 501(c)(3) organizations?,normal,billing_plan
