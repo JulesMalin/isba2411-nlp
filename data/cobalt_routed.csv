@@ -1,0 +1,161 @@
+ticket_id,ticket_text,plan,priority,category,predicted,confidence
+CB-4201,"Timestamps are coming through 7 hours off, so everything looks like it happened yesterday.",Team,normal,data_sync,bug_ui,0.942
+CB-4202,I deleted one widget and the entire dashboard layout scrambled itself.,Team,normal,bug_ui,bug_ui,0.9054
+CB-4203,"After the last release, currency fields are arriving as text instead of numbers.",Team,normal,data_sync,bug_ui,0.9243
+CB-4204,"The upgrade button does nothing when I click it, so I can't add the seats we need.",Business,high,billing_plan,bug_ui,0.3643
+CB-4205,Is there a list of keyboard shortcuts published somewhere?,Team,low,how_to,how_to,0.9417
+CB-4206,It would be great to have conditional formatting on table cells.,Business,low,feature_request,feature_request,0.7365
+CB-4207,Can we use a custom domain for externally shared links?,Business,low,how_to,feature_request,0.6055
+CB-4208,The percentage column shows 0% for values that are obviously nonzero.,Free,normal,bug_ui,bug_ui,0.9176
+CB-4209,Session keeps dropping on Safari specifically. Works fine on Chrome.,Free,normal,login_access,performance,0.7552
+CB-4210,The freshness indicator says 2 minutes but the numbers are clearly from this morning.,Business,normal,data_sync,bug_ui,0.8184
+CB-4211,Please let us white-label shared reports for our own clients.,Enterprise,low,feature_request,how_to,0.7242
+CB-4212,How do I bulk import users from a CSV file?,Team,low,how_to,how_to,0.9836
+CB-4213,Our API p95 latency went from 200ms to 3 seconds this week.,Business,normal,performance,performance,0.6492
+CB-4214,The whole app is crawling for our EU team specifically. The US team is unaffected.,Business,normal,performance,performance,0.9712
+CB-4215,The Google Sheets export stopped refreshing and just shows an old snapshot.,Team,normal,integrations,bug_ui,0.4134
+CB-4216,"The row counts here don't match our warehouse. We're off by roughly 4,000 records.",Team,normal,data_sync,bug_ui,0.9936
+CB-4217,"Sarah left the company last week but her account still has access. Please revoke immediately, this is a security concern.",Team,urgent,login_access,login_access,0.9791
+CB-4218,Where do I find our data retention settings?,Business,low,how_to,how_to,0.9629
+CB-4219,"help! whole team is locked out, we think someone changed the sso config by accident",Team,urgent,login_access,login_access,0.3186
+CB-4220,Numbers show with commas in one view and periods in another - inconsistent locale handling.,Business,normal,bug_ui,bug_ui,0.9647
+CB-4221,Jira tickets created from here aren't linking back - the link field comes through blank.,Free,normal,integrations,bug_ui,0.5304
+CB-4222,Our webhook fires twice for every event and the downstream system is double-counting.,Enterprise,high,integrations,integrations,0.8491
+CB-4223,Any chance of multiplayer cursors so two of us can co-edit a dashboard?,Business,low,feature_request,feature_request,0.9617
+CB-4224,We want to pin one north-star metric to the top of every dashboard.,Business,low,feature_request,bug_ui,0.6262
+CB-4225,Slack notifications stopped posting to our #alerts channel after we reinstalled the app.,Business,normal,integrations,integrations,0.9545
+CB-4226,BigQuery pull silently skipped an entire table and there was no alert about it.,Enterprise,normal,data_sync,data_sync,0.5107
+CB-4227,After you changed the sign-in page my password manager entry doesn't autofill anymore.,Business,normal,login_access,login_access,0.9743
+CB-4228,What's the best practice for separating staging from production workspaces?,Business,low,how_to,how_to,0.9715
+CB-4229,Do you have a status page? Things feel degraded but I can't confirm anywhere.,Team,high,performance,data_sync,0.2835
+CB-4230,The filter chip says 'Last 30 days' but the data shown is clearly year-to-date.,Enterprise,normal,bug_ui,bug_ui,0.9808
+CB-4231,"Receipts aren't reaching our AP mailbox, they're still going to someone who left the company.",Free,normal,billing_plan,billing_plan,0.4916
+CB-4232,Our largest dataset pushes the browser tab to 4GB of memory and then it crashes.,Business,urgent,performance,performance,0.7425
+CB-4233,The incremental refresh reset to a full load and blew through our API quota.,Team,normal,data_sync,data_sync,0.2629
+CB-4234,The API reference documents a field that doesn't exist in the actual response payload.,Free,normal,integrations,integrations,0.8259
+CB-4235,everything hangs when a colleague runs a big query - are we sharing compute?,Enterprise,normal,performance,performance,0.869
+CB-4236,We need to annotate charts with events like product releases.,Enterprise,low,feature_request,feature_request,0.4728
+CB-4237,Trying to understand how row-level security interacts with our customer data.,Business,low,how_to,bug_ui,0.4948
+CB-4238,Our Postgres connector hasn't pulled new rows since Tuesday and the dashboards are stale.,Enterprise,high,data_sync,data_sync,0.6114
+CB-4239,"The bar chart total doesn't match the table underneath it. Table says 1,204, chart says 1,199.",Business,normal,bug_ui,bug_ui,0.9913
+CB-4240,Records we deleted in the source are still showing up here. Is there a hard-delete option?,Business,normal,data_sync,data_sync,0.4647
+CB-4241,Requesting SAML group-to-role mapping so we stop managing permissions by hand.,Business,low,feature_request,feature_request,0.5071
+CB-4242,New columns we added upstream aren't appearing in the schema. Do I need to re-map manually?,Enterprise,normal,data_sync,bug_ui,0.6907
+CB-4243,"The OAuth consent screen shows the wrong app name to our users, so it looks like phishing.",Enterprise,normal,integrations,integrations,0.7432
+CB-4244,Snowflake connection keeps dropping mid-sync. Our credentials haven't changed.,Team,normal,data_sync,data_sync,0.6064
+CB-4245,Is there a Terraform provider? We manage all our infrastructure as code.,Business,normal,integrations,how_to,0.5372
+CB-4246,"Charts render one at a time instead of together, so a full dashboard takes ages.",Enterprise,normal,performance,bug_ui,0.7587
+CB-4247,Can two workspaces share one Slack install or do we need to connect each separately?,Team,normal,integrations,how_to,0.5965
+CB-4248,We'd really like version history on dashboards so we can roll back a bad change.,Business,low,feature_request,bug_ui,0.5646
+CB-4249,We were charged twice this month for the same seats. We need a refund on the duplicate.,Team,high,billing_plan,billing_plan,0.9926
+CB-4250,We'd like to set a default timezone per workspace rather than per user.,Business,low,feature_request,feature_request,0.659
+CB-4251,Can we increase the refresh frequency to every 15 minutes instead of hourly?,Business,normal,data_sync,performance,0.31
+CB-4252,I removed four users last month but the invoice still shows the old headcount.,Team,normal,billing_plan,billing_plan,0.5528
+CB-4253,The onboarding checklist still says incomplete even though we finished every step.,Team,normal,bug_ui,bug_ui,0.9601
+CB-4254,clicking save does nothing and my changes are gone as soon as i refresh,Team,normal,bug_ui,data_sync,0.4985
+CB-4255,"Please add native Excel export, not just CSV. Our finance team lives in Excel.",Enterprise,low,feature_request,how_to,0.9186
+CB-4256,Uploading a logo larger than 1MB fails silently with no error message at all.,Business,high,bug_ui,performance,0.4553
+CB-4257,We need to add 25 seats mid-cycle. Will that be prorated or charged in full?,Enterprise,normal,billing_plan,feature_request,0.361
+CB-4258,"The Salesforce connection is only pulling Accounts, not Opportunities.",Business,normal,integrations,integrations,0.7699
+CB-4259,Autosave lags so badly that I lose keystrokes while typing notes.,Team,normal,performance,performance,0.9618
+CB-4260,new admin here - where should i start? is there an onboarding guide,Free,low,how_to,how_to,0.9351
+CB-4261,Getting an 'account suspended' banner but our invoice is paid. Please advise.,Business,high,login_access,login_access,0.3873
+CB-4262,Can you send me a W-9 and an itemized invoice for our accounting team?,Free,normal,billing_plan,billing_plan,0.9463
+CB-4263,Sorting by the revenue column sorts alphabetically instead of numerically.,Team,normal,bug_ui,bug_ui,0.971
+CB-4264,SSO through Okta stopped working for our whole team after the weekend. Nobody can sign in.,Free,urgent,login_access,login_access,0.7408
+CB-4265,invoice INV-88214 doesn't match the amount that actually hit our card,Enterprise,normal,billing_plan,billing_plan,0.908
+CB-4266,page freezes completely when i apply more than three filters at once,Business,normal,performance,performance,0.757
+CB-4267,"requesting a refund, we barely used the product this quarter",Enterprise,normal,billing_plan,billing_plan,0.9916
+CB-4268,Can I clone an existing dashboard to use as a starting point?,Team,low,how_to,how_to,0.9759
+CB-4269,What happens to our data if we cancel? Is there a retention window before deletion?,Team,normal,billing_plan,bug_ui,0.3201
+CB-4270,What's the actual difference between a workspace and a project? Trying to structure our team.,Team,low,how_to,bug_ui,0.4398
+CB-4271,Is there a way to schedule a weekly email of one specific report?,Team,low,how_to,how_to,0.8583
+CB-4272,Is there documentation on how the 'engagement' metric is actually calculated?,Business,low,how_to,bug_ui,0.3121
+CB-4273,Please cancel our subscription effective at the end of the current term. We are not renewing.,Team,normal,billing_plan,billing_plan,0.9528
+CB-4274,How long are deleted dashboards recoverable before they're gone permanently?,Team,low,how_to,bug_ui,0.5065
+CB-4275,why does it sign me out every 20 minutes? extremely annoying when im in the middle of writing a report,Business,normal,login_access,performance,0.8889
+CB-4276,Our CSV export repeats the header row every 1000 lines.,Enterprise,normal,bug_ui,bug_ui,0.699
+CB-4277,Can't get into my account since this morning - it keeps saying my password is wrong but I haven't changed it.,Enterprise,high,login_access,login_access,0.992
+CB-4278,Our PO number has to appear on the invoice or our AP system rejects it automatically.,Enterprise,normal,billing_plan,billing_plan,0.9672
+CB-4279,"Scheduled reports are arriving hours late, or sometimes not at all.",Enterprise,normal,performance,performance,0.635
+CB-4280,Need to pause the connector over the weekend during a database migration. How?,Team,normal,data_sync,how_to,0.9539
+CB-4281,"Sync fails with error SYNC_TIMEOUT after about 12 minutes, every night.",Free,high,data_sync,performance,0.9532
+CB-4282,The magic link goes to a page that says token invalid. Every single time.,Business,normal,login_access,login_access,0.5871
+CB-4283,Webhook signature verification fails when using the secret shown in the dashboard.,Team,high,integrations,integrations,0.6748
+CB-4284,How do I embed a chart into a Confluence page?,Free,low,how_to,how_to,0.9838
+CB-4285,Dashboards take 40+ seconds to load since yesterday. They used to come up instantly.,Business,normal,performance,performance,0.9726
+CB-4286,Any plans to support Microsoft Teams? We're migrating off Slack next quarter.,Team,normal,integrations,integrations,0.7623
+CB-4287,The Zapier connection broke after your API version bump last week.,Enterprise,normal,integrations,integrations,0.9055
+CB-4288,I'm stuck in a redirect loop when I try to sign in with Google. It just spins forever.,Enterprise,normal,login_access,login_access,0.9079
+CB-4289,I need to transfer the owner role. The previous owner has left and we can't reach billing settings.,Business,high,login_access,how_to,0.3032
+CB-4290,"New phone, lost my 2FA device. How do I get back in? I'm the only admin on the account.",Enterprise,normal,login_access,how_to,0.5282
+CB-4291,our nightly ETL job now overlaps with your refresh and locks the table,Enterprise,normal,data_sync,bug_ui,0.5402
+CB-4292,Can we pay by ACH or wire instead of credit card? Our finance team won't approve cards.,Enterprise,normal,billing_plan,how_to,0.6167
+CB-4293,We're rate limited at 100 requests a minute but need a higher ceiling for our nightly export.,Team,normal,integrations,feature_request,0.3479
+CB-4294,can you add a dark mode preference that actually persists across devices,Enterprise,low,feature_request,feature_request,0.9312
+CB-4295,Print view cuts off the right third of any wide table.,Enterprise,normal,bug_ui,bug_ui,0.9428
+CB-4296,"Locked out after too many attempts. Can someone reset it - this is urgent, I have a board meeting in an hour.",Enterprise,urgent,login_access,login_access,0.3131
+CB-4297,"It's noticeably slower since the redesign - same data, same filters as before.",Business,normal,performance,performance,0.9278
+CB-4298,The 2FA setup QR code won't scan and there's no manual key shown as a fallback.,Enterprise,normal,login_access,login_access,0.9423
+CB-4299,sync reports success but nothing actually updated. very confusing,Team,normal,data_sync,data_sync,0.4428
+CB-4300,Add multi-select on date comparison so we can see QoQ and YoY at the same time.,Business,low,feature_request,feature_request,0.9284
+CB-4301,Can we exclude PII columns from being pulled in? Compliance is asking.,Enterprise,normal,data_sync,how_to,0.9342
+CB-4302,Getting permission denied after our DBA rotated the service account credentials.,Team,normal,data_sync,login_access,0.8447
+CB-4303,A bulk edit across 500 records fails halfway through with no error message.,Business,high,performance,performance,0.6619
+CB-4304,our service account hit a permission wall after your last update,Business,normal,integrations,login_access,0.4992
+CB-4305,We got charged for a trial I understood to be free. Please reverse that.,Business,normal,billing_plan,billing_plan,0.9366
+CB-4306,The historical backfill has been running for three days now. Is that expected?,Business,normal,data_sync,performance,0.75
+CB-4307,Please support nested folders - a flat list doesn't scale for an org our size.,Team,low,feature_request,feature_request,0.7244
+CB-4308,How do I share a dashboard with someone outside our organization?,Team,low,how_to,how_to,0.9464
+CB-4309,"The first load after signing in is very slow, then subsequent pages are fine.",Free,normal,performance,performance,0.7616
+CB-4310,The loading spinner never resolves on the admin settings page.,Team,normal,performance,performance,0.9485
+CB-4311,Feature request: alert digests instead of one email per alert. My inbox is unusable.,Enterprise,low,feature_request,feature_request,0.8888
+CB-4312,"Exporting anything over about 10,000 rows just times out.",Team,normal,performance,performance,0.7612
+CB-4313,Duplicate rows show up in the UI but the export only contains one of them.,Enterprise,normal,bug_ui,bug_ui,0.9715
+CB-4314,We only see timeouts once we hit the Business plan limits - are we being throttled?,Business,high,performance,performance,0.9303
+CB-4315,How do I archive old projects without permanently deleting them?,Business,low,how_to,how_to,0.9888
+CB-4316,Pasting into the notes field strips all formatting and line breaks.,Team,normal,bug_ui,bug_ui,0.447
+CB-4317,Search takes forever and sometimes returns nothing at all until I retry.,Team,normal,performance,performance,0.9731
+CB-4318,The tooltip gets cut off at the edge of the screen so I can't read the full value.,Business,high,bug_ui,bug_ui,0.783
+CB-4319,Need to switch from monthly to annual so we can use up budget before end of quarter.,Free,normal,billing_plan,billing_plan,0.2937
+CB-4320,Any plans for a native iOS home screen widget?,Business,low,feature_request,feature_request,0.9437
+CB-4321,The card on file expired and now the account is in a grace period. Where do I update it?,Free,normal,billing_plan,how_to,0.7304
+CB-4322,I can sign in on desktop but the mobile app says invalid credentials with the exact same password.,Free,normal,login_access,login_access,0.9785
+CB-4323,Can we enforce SSO only and turn off password sign-in for our whole org?,Business,normal,login_access,how_to,0.6254
+CB-4324,The mobile app is unusably slow on anything other than wifi.,Team,normal,performance,performance,0.9555
+CB-4325,Please add anomaly detection on key metrics instead of static thresholds.,Enterprise,low,feature_request,feature_request,0.7143
+CB-4326,sdk throws a 401 intermittently even with a token thats definitely valid,Team,normal,integrations,bug_ui,0.328
+CB-4327,Dark mode makes the axis labels essentially invisible.,Business,normal,bug_ui,bug_ui,0.9151
+CB-4328,What's the recommended way to organize 200+ dashboards? Ours has become a mess.,Enterprise,low,how_to,how_to,0.8471
+CB-4329,"The password reset email never arrives. Checked spam, tried three times.",Team,normal,login_access,login_access,0.8178
+CB-4330,Chart legend colors stop matching the series after I reorder them.,Free,normal,bug_ui,bug_ui,0.9852
+CB-4331,A public API for creating dashboards would let us automate customer onboarding.,Enterprise,low,feature_request,integrations,0.8215
+CB-4332,the undo button undoes more than one action at a time,Business,normal,bug_ui,login_access,0.3445
+CB-4333,how do i set up an alert for when a metric drops below a threshold,Team,low,how_to,how_to,0.933
+CB-4334,Can I export the audit log for a compliance review?,Business,low,how_to,how_to,0.6671
+CB-4335,Please add the ability to comment on a specific data point rather than the whole dashboard.,Business,low,feature_request,feature_request,0.9432
+CB-4336,Our SAML metadata certificate expired and now nobody on the eng team can authenticate. Need this fixed today.,Business,urgent,login_access,integrations,0.3267
+CB-4337,Long team names overflow their container and break the sidebar layout.,Business,normal,bug_ui,bug_ui,0.9027
+CB-4338,The timezone selector resets itself to UTC every time I reload the page.,Team,normal,bug_ui,bug_ui,0.7841
+CB-4339,A query that ran in 2 seconds last week now takes 90. Nothing changed on our side.,Enterprise,normal,performance,performance,0.9501
+CB-4340,How exactly are seats counted - is a deactivated user still billed until renewal?,Business,normal,billing_plan,bug_ui,0.524
+CB-4341,How do I give someone view-only access without consuming a full seat?,Team,low,how_to,how_to,0.9447
+CB-4342,It would help enormously to see who viewed a dashboard and when.,Team,low,feature_request,feature_request,0.2808
+CB-4343,HubSpot custom properties don't appear in the field mapping dropdown at all.,Business,high,integrations,bug_ui,0.863
+CB-4344,Getting 504 gateway timeouts on the reports page during business hours.,Enterprise,high,performance,performance,0.9165
+CB-4345,Duplicate rows appear after every refresh - same primary key repeated twice.,Business,normal,data_sync,bug_ui,0.9615
+CB-4346,We need SCIM provisioning so accounts get created automatically from Okta.,Team,normal,integrations,feature_request,0.4707
+CB-4347,We need to rotate our API key without downtime. What's the recommended process?,Business,high,integrations,how_to,0.8302
+CB-4348,We want to move from Business down to Team at renewal. What functionality do we lose?,Free,high,billing_plan,login_access,0.1882
+CB-4349,Your browser extension conflicts with our security plugin and crashes the tab.,Team,urgent,integrations,login_access,0.3025
+CB-4350,Trying to add a new teammate but the invite link says expired the moment they click it.,Team,normal,login_access,performance,0.4153
+CB-4351,Is there a sandbox environment where we can test before pointing production at it?,Business,normal,integrations,feature_request,0.5856
+CB-4352,Why did our price go up 30% without notice? Nobody told us about a change.,Enterprise,normal,billing_plan,billing_plan,0.8617
+CB-4353,The date picker won't let me select anything before 2024 even though we have older data.,Business,normal,bug_ui,bug_ui,0.8658
+CB-4354,Are we on a legacy plan? Trying to work out why our feature set differs from the pricing page.,Enterprise,normal,billing_plan,bug_ui,0.5867
+CB-4355,MFA codes from the authenticator app are being rejected. I've resynced the app twice already.,Team,normal,login_access,login_access,0.6612
+CB-4356,requesting bulk delete - cleaning up 300 stale charts one at a time is painful,Business,low,feature_request,bug_ui,0.535
+CB-4357,Please add Snowflake key-pair authentication. Static passwords are against our policy.,Business,low,feature_request,login_access,0.379
+CB-4358,Refresh failures aren't being emailed to anyone - we only found out by accident.,Business,normal,data_sync,data_sync,0.9511
+CB-4359,What roles exist and what can each one do? I can't find a permissions matrix anywhere.,Team,low,how_to,bug_ui,0.3266
+CB-4360,We're a nonprofit - do you offer discounted pricing for 501(c)(3) organizations?,Team,normal,billing_plan,billing_plan,0.589
