@@ -24,8 +24,11 @@ GENERATOR = "Qwen/Qwen2.5-1.5B-Instruct"
 st.set_page_config(page_title="Cobalt Support Copilot", page_icon="🟦", layout="wide")
 
 # --------------------------------------------------------------------- loading
-@st.cache_resource(show_spinner="Loading the knowledge base and models…")
+@st.cache_resource(show_spinner=False)
 def load():
+    """Loading is staged and reported, because an opaque spinner cannot distinguish
+    'downloading three gigabytes' from 'hung'. On a warm cache this takes about 25
+    seconds; the first run in a fresh Colab downloads the generator and takes minutes."""
     import torch
     from sentence_transformers import SentenceTransformer, CrossEncoder
     from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -34,13 +37,28 @@ def load():
     # float32 doubles the memory for no benefit on a GPU. On a shared Colab GPU that is
     # the difference between loading and an out-of-memory crash.
     dtype = torch.float16 if dev == "cuda" else torch.float32
-    kb = json.load(open(KB))
-    enc = SentenceTransformer(ENCODER, device=dev)
-    X = enc.encode([f"{d['title']}. {d['section']}. {d['text']}" for d in kb],
-                   normalize_embeddings=True, batch_size=32)
-    rr = CrossEncoder(RERANKER, device=dev)
-    tok = AutoTokenizer.from_pretrained(GENERATOR)
-    gen = AutoModelForCausalLM.from_pretrained(GENERATOR, dtype=dtype).to(dev).eval()
+
+    with st.status("Starting the copilot…", expanded=True) as status:
+        st.write(f"running on **{dev}**")
+        st.write("reading Cobalt's help centre…")
+        kb = json.load(open(KB))
+
+        st.write(f"loading the encoder and indexing {len(kb)} chunks…")
+        enc = SentenceTransformer(ENCODER, device=dev)
+        X = enc.encode([f"{d['title']}. {d['section']}. {d['text']}" for d in kb],
+                       normalize_embeddings=True, batch_size=32)
+
+        st.write("loading the reranker…")
+        rr = CrossEncoder(RERANKER, device=dev)
+
+        st.write("loading the generator, about 3 GB. "
+                 "**The first run on a new machine downloads it and can take several "
+                 "minutes.** After that it is cached and takes seconds.")
+        tok = AutoTokenizer.from_pretrained(GENERATOR)
+        gen = AutoModelForCausalLM.from_pretrained(GENERATOR, dtype=dtype).to(dev).eval()
+
+        status.update(label=f"Ready. {len(kb)} chunks indexed, running on {dev}.",
+                      state="complete", expanded=False)
     return kb, enc, X, rr, tok, gen, dev, torch
 
 kb, enc, X, rr, tok, gen, DEVICE, torch = load()
