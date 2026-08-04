@@ -1,0 +1,194 @@
+[
+ {
+  "chunk_id": "admin-sso#0",
+  "doc_id": "admin-sso",
+  "title": "Admin Guide: Single Sign-On",
+  "section": "Setting up SSO",
+  "text": "Cobalt supports SAML 2.0 single sign-on with any compliant identity provider, including Okta, Entra ID and Google Workspace. Configuration lives under Admin, then Identity Providers. You will need your provider's metadata URL and a current signing certificate. Only workspace owners can add or change a provider.",
+  "words": 46
+ },
+ {
+  "chunk_id": "admin-sso#1",
+  "doc_id": "admin-sso",
+  "title": "Admin Guide: Single Sign-On",
+  "section": "Reconnecting a provider after a failure",
+  "text": "If sign-in stops working for your whole team, the connection usually needs to be re-established rather than rebuilt. Go to Admin, then Identity Providers, select your provider, and choose Reconnect. Your signing certificate must be current or the reconnect will fail with an assertion error. Reconnecting does not sign out users who already have an active session.",
+  "words": 57
+ },
+ {
+  "chunk_id": "admin-sso#2",
+  "doc_id": "admin-sso",
+  "title": "Admin Guide: Single Sign-On",
+  "section": "Certificate expiry",
+  "text": "SAML signing certificates expire, typically every one or two years. Cobalt emails workspace owners 30 days and 7 days before expiry. Once a certificate has expired, all SSO sign-ins fail and the only route back in is a workspace owner using password sign-in, which is why we recommend keeping at least one owner account with password access enabled.",
+  "words": 58
+ },
+ {
+  "chunk_id": "admin-sso#3",
+  "doc_id": "admin-sso",
+  "title": "Admin Guide: Single Sign-On",
+  "section": "Enforcing SSO only",
+  "text": "Owners can disable password sign-in for the whole workspace under Admin, then Security, then Authentication. We strongly recommend exempting at least one owner account so that an expired certificate cannot lock the entire organisation out.",
+  "words": 35
+ },
+ {
+  "chunk_id": "admin-access#0",
+  "doc_id": "admin-access",
+  "title": "Admin Guide: Users, Roles and Access",
+  "section": "Roles",
+  "text": "Cobalt has four roles. Owners control billing, security and identity settings. Admins manage users and workspaces but not billing. Members create and edit dashboards. Viewers can open dashboards but change nothing. Viewer seats are not charged.",
+  "words": 36
+ },
+ {
+  "chunk_id": "admin-access#1",
+  "doc_id": "admin-access",
+  "title": "Admin Guide: Users, Roles and Access",
+  "section": "Giving someone view-only access",
+  "text": "Invite them from Admin, then Users, and select the Viewer role. Viewer seats do not consume a paid seat and do not count toward your plan limit.",
+  "words": 27
+ },
+ {
+  "chunk_id": "admin-access#2",
+  "doc_id": "admin-access",
+  "title": "Admin Guide: Users, Roles and Access",
+  "section": "Removing access when someone leaves",
+  "text": "Deactivating a user from Admin, then Users immediately ends their sessions and frees their seat at the next billing cycle. Deactivation preserves the dashboards they created. Deleting a user instead of deactivating them will reassign their dashboards to the workspace owner.",
+  "words": 41
+ },
+ {
+  "chunk_id": "admin-access#3",
+  "doc_id": "admin-access",
+  "title": "Admin Guide: Users, Roles and Access",
+  "section": "Transferring ownership",
+  "text": "If the current owner has left, another owner can promote a replacement. If no owner remains, contact support with proof of domain control and we will transfer ownership. This is the one case that cannot be self-served.",
+  "words": 37
+ },
+ {
+  "chunk_id": "billing-invoices#0",
+  "doc_id": "billing-invoices",
+  "title": "Billing: Invoices, Seats and Refunds",
+  "section": "How seats are counted",
+  "text": "You are billed for active Member seats at the start of each cycle. Viewers are free. Deactivating a user frees the seat at the next cycle, not immediately, which is why a removed user can still appear on the current invoice.",
+  "words": 41
+ },
+ {
+  "chunk_id": "billing-invoices#1",
+  "doc_id": "billing-invoices",
+  "title": "Billing: Invoices, Seats and Refunds",
+  "section": "Duplicate charges",
+  "text": "If the same amount appears twice in one cycle, this is nearly always a retried payment authorisation rather than two charges. The pending authorisation clears within five business days. If both charges have settled, contact support and we refund the duplicate within one billing cycle.",
+  "words": 45
+ },
+ {
+  "chunk_id": "billing-invoices#2",
+  "doc_id": "billing-invoices",
+  "title": "Billing: Invoices, Seats and Refunds",
+  "section": "Requesting a refund",
+  "text": "Refunds are issued to the original payment method and take one billing cycle to appear. We can issue partial refunds for seats removed mid-cycle only on annual plans.",
+  "words": 28
+ },
+ {
+  "chunk_id": "billing-invoices#3",
+  "doc_id": "billing-invoices",
+  "title": "Billing: Invoices, Seats and Refunds",
+  "section": "Tax documents",
+  "text": "W-9 and W-8 forms and itemised invoices are available under Billing, then Documents. VAT registration numbers can be added under Billing, then Details, and appear on all future invoices but cannot be applied retroactively.",
+  "words": 34
+ },
+ {
+  "chunk_id": "data-sync#0",
+  "doc_id": "data-sync",
+  "title": "Data: Connectors and Sync Schedules",
+  "section": "How syncs are scheduled",
+  "text": "Connectors sync on a fixed schedule set per connector under Data, then Connectors. The shortest interval on the Team plan is six hours; Business and Enterprise support hourly. A sync that is already running will not start a second run, so a long sync can appear to skip an interval.",
+  "words": 50
+ },
+ {
+  "chunk_id": "data-sync#1",
+  "doc_id": "data-sync",
+  "title": "Data: Connectors and Sync Schedules",
+  "section": "A sync that stopped without an error",
+  "text": "If the last sync timestamp has not moved, check the connector's credential status first. Expired credentials pause the schedule rather than failing it, which is why no error appears. Re-authorise under Data, then Connectors, then the connector name, then Re-authorise.",
+  "words": 40
+ },
+ {
+  "chunk_id": "data-sync#2",
+  "doc_id": "data-sync",
+  "title": "Data: Connectors and Sync Schedules",
+  "section": "Row counts that do not match the source",
+  "text": "The most common cause is a filter on the connector rather than missing data. The second most common is timezone: Cobalt stores timestamps in UTC and applies your workspace timezone at display time, so a row can appear to fall on a different day than in the source system.",
+  "words": 49
+ },
+ {
+  "chunk_id": "data-sync#3",
+  "doc_id": "data-sync",
+  "title": "Data: Connectors and Sync Schedules",
+  "section": "Duplicate records after a sync",
+  "text": "Duplicates almost always mean the connector's primary key is not unique in the source. Set the key explicitly under the connector's Advanced settings.",
+  "words": 23
+ },
+ {
+  "chunk_id": "perf-limits#0",
+  "doc_id": "perf-limits",
+  "title": "Performance: Limits and Slow Dashboards",
+  "section": "Export limits",
+  "text": "CSV export is capped at 10,000 rows in the browser. Larger extracts should use a scheduled export, which delivers by email and supports up to 1,000,000 rows.",
+  "words": 27
+ },
+ {
+  "chunk_id": "perf-limits#1",
+  "doc_id": "perf-limits",
+  "title": "Performance: Limits and Slow Dashboards",
+  "section": "Dashboards that load slowly",
+  "text": "Load time is dominated by the number of separate queries a dashboard runs, not by the volume of data. A dashboard with more than about fifteen widgets will feel slow regardless of plan. Combining widgets that share a filter is the single most effective fix.",
+  "words": 45
+ },
+ {
+  "chunk_id": "perf-limits#2",
+  "doc_id": "perf-limits",
+  "title": "Performance: Limits and Slow Dashboards",
+  "section": "Timeouts",
+  "text": "Queries time out at 60 seconds on Team and 180 seconds on Business and Enterprise. The limit cannot be raised per workspace.",
+  "words": 22
+ },
+ {
+  "chunk_id": "integrations#0",
+  "doc_id": "integrations",
+  "title": "Integrations: Slack, Webhooks and the API",
+  "section": "Slack notifications",
+  "text": "Connect Slack under Integrations, then Slack. Notifications stop if the Slack app is removed from the channel or if the workspace token is rotated; both cases require reconnecting from the same screen.",
+  "words": 32
+ },
+ {
+  "chunk_id": "integrations#1",
+  "doc_id": "integrations",
+  "title": "Integrations: Slack, Webhooks and the API",
+  "section": "Webhooks",
+  "text": "Webhooks retry three times with exponential backoff, then stop. A webhook that returns any non-2xx status counts as a failure. Signature verification uses the secret shown at creation time, which is displayed once and cannot be retrieved later.",
+  "words": 38
+ },
+ {
+  "chunk_id": "integrations#2",
+  "doc_id": "integrations",
+  "title": "Integrations: Slack, Webhooks and the API",
+  "section": "API rate limits",
+  "text": "The API allows 120 requests per minute per workspace on Team and 600 on Enterprise. Exceeding it returns HTTP 429 with a Retry-After header. Rate limits are per workspace, not per key, so adding keys does not raise the ceiling.",
+  "words": 40
+ },
+ {
+  "chunk_id": "getting-started#0",
+  "doc_id": "getting-started",
+  "title": "Getting Started with Cobalt",
+  "section": "What Cobalt does",
+  "text": "Cobalt connects to your company databases and turns them into dashboards your team can read each morning. Most customers are up and running within a day.",
+  "words": 26
+ },
+ {
+  "chunk_id": "getting-started#1",
+  "doc_id": "getting-started",
+  "title": "Getting Started with Cobalt",
+  "section": "Your first dashboard",
+  "text": "Connect a data source under Data, then Connectors, then create a dashboard from Dashboards, then New. Widgets are added one at a time and share the dashboard's filters by default.",
+  "words": 30
+ }
+]
