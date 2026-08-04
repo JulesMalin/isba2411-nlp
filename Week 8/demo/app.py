@@ -31,13 +31,16 @@ def load():
     from transformers import AutoTokenizer, AutoModelForCausalLM
     dev = "mps" if torch.backends.mps.is_available() else (
           "cuda" if torch.cuda.is_available() else "cpu")
+    # float32 doubles the memory for no benefit on a GPU. On a shared Colab GPU that is
+    # the difference between loading and an out-of-memory crash.
+    dtype = torch.float16 if dev == "cuda" else torch.float32
     kb = json.load(open(KB))
     enc = SentenceTransformer(ENCODER, device=dev)
     X = enc.encode([f"{d['title']}. {d['section']}. {d['text']}" for d in kb],
                    normalize_embeddings=True, batch_size=32)
     rr = CrossEncoder(RERANKER, device=dev)
     tok = AutoTokenizer.from_pretrained(GENERATOR)
-    gen = AutoModelForCausalLM.from_pretrained(GENERATOR, dtype=torch.float32).to(dev).eval()
+    gen = AutoModelForCausalLM.from_pretrained(GENERATOR, dtype=dtype).to(dev).eval()
     return kb, enc, X, rr, tok, gen, dev, torch
 
 kb, enc, X, rr, tok, gen, DEVICE, torch = load()
