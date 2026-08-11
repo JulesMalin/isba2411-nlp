@@ -83,6 +83,9 @@ td.k{font-weight:700;white-space:nowrap}
 .check li::before{content:"";position:absolute;left:0;top:3px;width:17px;height:17px;
   border:2px solid var(--faint);border-radius:5px}
 
+.btn{display:inline-block;background:var(--indigo);color:#fff;text-decoration:none;
+     font-weight:800;font-size:16px;padding:11px 22px;border-radius:11px;margin:4px 0 2px}
+.btn:hover{filter:brightness(1.08)}
 .foot{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);
       font-size:13px;color:var(--faint)}
 
@@ -101,7 +104,7 @@ td.k{font-weight:700;white-space:nowrap}
 <div class="lede">Twenty-five minutes. One rule, one number, one line of code you are
 allowed to edit.</div>
 <div class="meta">Notebook: <code>L17_Support_Copilot_Audit.ipynb</code>, STEP 15 &nbsp;&middot;&nbsp;
-Leaderboard: <code>L17_RedTeam_Leaderboard.xlsx</code></div>
+Leaderboard: <a href="https://docs.google.com/spreadsheets/d/1k374fVn1quqrnYiU0TW09biFNLLs9Lg2/edit?gid=233328709#gid=233328709">shared Google Sheet</a></div>
 
 <h2>The situation</h2>
 <p>Cobalt's support copilot drafts replies to customer tickets. Before it writes anything it
@@ -211,9 +214,10 @@ mean nothing next to each other. Retrieval here is deterministic, so anyone can 
 ticket text and get your number back. A score nobody can reproduce does not count.</p>
 
 <h2>Logging your attempts</h2>
-<p>Open <code>L17_RedTeam_Leaderboard.xlsx</code>, <b>Attempts</b> sheet. One row per attempt.
-The Leaderboard sheet takes your best valid score and ranks it by formula, so there is nothing
-to type there.</p>
+<p><a class="btn" href="https://docs.google.com/spreadsheets/d/1k374fVn1quqrnYiU0TW09biFNLLs9Lg2/edit?gid=233328709#gid=233328709">&#128202;&nbsp; Open the leaderboard</a></p>
+<p>Go to the <b>Attempts</b> sheet. One row per attempt. The Leaderboard sheet takes your best
+valid score and ranks it by formula, so there is nothing to type there. If the link asks you to
+request access, you are signed into the wrong Google account.</p>
 <div class="tw"><table>
 <tr><th>column</th><th>what goes in</th></tr>
 <tr><td class="k">Team</td><td>Pick from the dropdown.</td></tr>
